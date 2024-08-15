@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Transilvania</title>
+
+    <!-- Preconexão e link da fonte Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: 'Mitr', sans-serif;
+            background-image: url('image/fundo.png');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            background-color: rgba(255, 255, 255, 0.652);
+            background-blend-mode: lighten;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(to left, #B5B2B2, #ffffff);
+            color: white;
+            margin-left: -15px;
+            margin-right: -15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .card-img-top {
+            width: auto;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .nav-pills .nav-link {
+            color: white;
+        }
+
+        .nav-pills .nav-link.active {
+            background-color: #6c757d;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            border-radius: 25px;
+            border: 2px solid #ccc;
+            /* Borda dentro do card */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            background-color: rgba(77, 71, 71, 1);
+            color: #fff;
+            padding: 7px;
+            border-radius: 10px;
+            text-align: center;
+            position: absolute;
+            top: 230px;
+            /* Adjust this value to control the vertical position */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            z-index: 1;
+            /* Ensure the title is above the image */
+        }
+
+
+        .card-text {
+            font-size: 0.9rem;
+            /* Reduz o tamanho da fonte */
+        }
+
+        .card-price {
+            font-size: 1rem;
+            /* Reduz o tamanho da fonte do preço */
+            font-weight: bold;
+            color: #6c757d;
+        }
+
+        .logo {
+            width: 70px;
+            height: auto;
+        }
+
+        #msg {
+            font-size: 12px;
+            color: black;
+        }
+
+        footer {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <header class="d-flex flex-wrap justify-content-between align-items-center py-3 mb-4 border-bottom">
+            <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+                <img src="image/logo.png" alt="Hotel Transilvania Logo" class="logo">
+            </a>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="hospede.html"class="nav-link">Hospedes</a></li>
+                <li class="nav-item"><a href="quarto.html" class="nav-link">Quartos</a></li>
+                <li class="nav-item"><a href="reserva.html" class="nav-link">Reservas</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="row text-center mb-4">
+            <div class="col" id="msg">
+                <h1>Bem-vindo ao Hotel Transilvania: onde o descanso é sobrenatural!</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="image/jacuzzi.png" class="card-img-top" alt="Quarto com Jacuzzi">
+                    <div class="card-body">
+                        <h5 class="card-title jacuzzi">Quarto com Jacuzzi</h5>
+                        <p class="card-text">
+                            - 35m²<br>
+                            - Minibar<br>
+                            - Smart TV 60°<br>
+                            - Aquecimento central<br>
+                            - Cama King size<br>
+                            - Vista para Jardim e lago
+                        </p>
+                        <p class="card-price">789,99 a diária</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="image/cristo.png" class="card-img-top" alt="Quarto vista p/ Cristo">
+                    <div class="card-body">
+                        <h5 class="card-title cristo">Quarto vista p/ Cristo</h5>
+                        <p class="card-text">
+                            - 27m²<br>
+                            - Banheira com hidromassagem<br>
+                            - Smart TV 60°<br>
+                            - Vista panorâmica<br>
+                            - Cama King size<br>
+                            - Ar condicionado
+                        </p>
+                        <p class="card-price">559,99 a diária</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="image/luxo.png" class="card-img-top" alt="Suíte premium">
+                    <div class="card-body">
+                        <h5 class="card-title luxo">Suíte premium</h5>
+                        <p class="card-text">
+                            - 50m²<br>
+                            - Banheira<br>
+                            - Smart TV 60°<br>
+                            - Vista para praia<br>
+                            - Cama King size<br>
+                            - Lareira
+                        </p>
+                        <p class="card-price">1.139,99 a diária</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+            <p class="col-md-4 mb-0 text-muted">&copy; 2024 Hotel Transilvania</p>
+        </footer>
+    </div>
+</body>
+
+</html>
