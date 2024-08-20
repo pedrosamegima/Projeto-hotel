@@ -1,5 +1,7 @@
 package com.HotelTransilvamia.entities;
 
+import java.time.LocalDate;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,9 +25,9 @@ public class Reserva {
 	@Column(name = "id", nullable = false, length = 100)
 	private Long id;
 	
-	private String nome;
+	private LocalDate checkIn;
 	
-	private String dataReserva;
+	private LocalDate checkOut;
 	
 	@ManyToOne
 	@JoinColumn(name= "id_quarto")
