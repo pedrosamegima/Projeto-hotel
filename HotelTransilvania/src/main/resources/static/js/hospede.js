@@ -24,7 +24,7 @@ function loadGuests() {
                     <td>${guest.cpf}</td>
                     <td>${guest.email}</td>
                     <td>
-                    	<button class="btn btn-sm btn-warning" onclick="showEditGuestForm(${guest.id}, '${guest.name}', '${guest.cpf}', '${guest.email}')">Edit</button>
+                    	<button class="btn btn-sm bg-secondary" onclick="showEditGuestForm(${guest.id}, '${guest.name}', '${guest.cpf}', '${guest.email}')">Edit</button>
                     	<button class="btn btn-sm btn-danger" onclick="deleteGuest(${guest.id})">Delete</button>
                     </td>
                  </tr>`

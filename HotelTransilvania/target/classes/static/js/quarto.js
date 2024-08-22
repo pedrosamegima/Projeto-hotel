@@ -23,8 +23,8 @@ function loadGuests() {
                     <td>${guest.numQuarto}</td>
                     <td>${guest.descricao}</td>
                     <td>
-                    	<button class="btn btn-sm btn-warning" onclick="showEditGuestForm(${guest.id}, '${guest.numQuarto}', '${guest.descricao}')">Edit</button>
-                    	<button class="btn btn-sm btn-danger" onclick="deleteGuest(${guest.id})">Delete</button>
+                    	<button class="btn btn-sm bg-secondary"onclick="showEditGuestForm(${guest.id}, '${guest.numQuarto}', '${guest.descricao}')">Edit</button>
+                    	<button class="btn btn-sm btn-danger" onclick="deleteGuest(${guest.id})">Excluir</button>
                     </td>
                  </tr>`
 			);
@@ -42,6 +42,7 @@ function showAddGuestForm() {
 
 function showEditGuestForm(id, numQuarto, descricao) {
 	$('#formTitle').text('Edit Quarto');
+	 
 	$('#guestId').val(id);
 	$('#guestnumQuarto').val(numQuarto);
 	$('#guestdescricao').val(descricao);

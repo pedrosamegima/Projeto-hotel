@@ -25,8 +25,8 @@ function loadReserva() {
                     <td>${reserva.checkIn}</td>
                     <td>${reserva.checkOut}</td>
                     <td>
-                    	<button class="btn btn-sm btn-warning" onclick="showEditReservaForm(${reserva.id}, '${reserva.hospede.id}', '${reserva.quarto.id}', '${reserva.checkIn}', '${reserva.checkOut}')">Edit</button>
-                    	<button class="btn btn-sm btn-danger" onclick="deleteReserva(${reserva.id})">Delete</button>
+                    	<button class="btn btn-sm bg-secondary"  onclick="showEditReservaForm(${reserva.id}, '${reserva.hospede.id}', '${reserva.quarto.id}', '${reserva.checkIn}', '${reserva.checkOut}')">Edit</button>
+                    	<button class="btn btn-sm btn-danger" onclick="deleteReserva(${reserva.id})">Excluir</button>
                     </td>
                  </tr>`
 			);
